@@ -1,0 +1,6 @@
+I think this practical is very difficult for me at beginning. 
+I don't know how to edge wed first and the process of "push" takes me long time. 
+It sometime didn't work and I don't know why. 
+I have to try again and ask my friends for help. 
+However, they also don't know how to resolve them.
+I think the most difficult time is that the program didn't work after you code the given command and you can't understand the error tips.
