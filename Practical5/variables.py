@@ -10,8 +10,8 @@ elif d == e :
 else :
  print "e is greater"
 
-X = 2 > 1
-Y = 1 > 2
+X = True
+Y = False
 Z = (X and not Y) or (Y and not X)
 print Z
 W = X != Y
