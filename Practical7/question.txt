@@ -1,0 +1,7 @@
+The question is :
+Are there places in the World where there have not yet been more than 10 total infections(as of 31 March)? If so, where are they?
+
+the answer line from 19 to 27
+
+The result is showed here. However, as some data is collected until 2020-03-30, it is necessary to merge the result in 2020-03-30 and in 2020-03-31.
+
