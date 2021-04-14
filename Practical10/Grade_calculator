@@ -1,0 +1,12 @@
+class Calculator:
+ def __init__(self, name, code, poster, final_exam):
+  self.name = name
+  self.code = code
+  self.poster = poster
+  self.final_exam = final_exam
+ def grade(self):
+  grade = self.code *0.4 + self.poster *0.3 + self.final_exam *0.3
+  print(self.name + " " + str(grade))
+
+text = Calculator("Tang Shijie", 90, 95, 90)
+text.grade()

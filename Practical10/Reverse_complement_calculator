@@ -1,0 +1,9 @@
+translate = {'C':'G', 'G':'C', 'A':'T', 'T':'A'}
+def calculator(DNA):
+ new_DNA = ''
+ for n in range(0,len(DNA)):
+  new_DNA = translate[DNA[n]] + new_DNA
+ print(new_DNA)
+
+DNA = "ATGTTGAATAGTTCAAGAAAATATGCTTGTCG"
+calculator(DNA)

@@ -1,0 +1,12 @@
+class Student:
+ def __init__(self,first_name,last_name, programme):
+  self.first_name = first_name
+  self.last_name = last_name
+  self.programme = programme
+ def detail(self):
+  print("the first name is : " + self.first_name)
+  print("the last name is : " + self.last_name)
+  print("the programme is : " + self.programme)
+
+test = Student('Tang','Shijie', 'BMI')
+test.detail()
