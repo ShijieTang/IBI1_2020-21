@@ -4,9 +4,8 @@ class Student:
   self.last_name = last_name
   self.programme = programme
  def detail(self):
-  print("the first name is : " + self.first_name)
-  print("the last name is : " + self.last_name)
-  print("the programme is : " + self.programme)
+  print(self.first_name + " " + self.last_name + " " + self.programme
 
+#here is the example:
 test = Student('Tang','Shijie', 'BMI')
 test.detail()
