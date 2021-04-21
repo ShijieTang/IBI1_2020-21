@@ -1,1 +1,8 @@
-Form the comparisons, we can found that the similarity of protein sequence between human and mouse(whose score is 199 and persentage is 89.63963963963964%) is much similar than each of both compared with random sequence(the score and persentage of mouse-random are 13 and 5.8558558558558556%. The score and persentage of human-random are 12 and 5.405405405405405%). The similarity is not a coincidence. From animals classification, human and mouse are both mammals. Whats more, from theory of evolution, the protein similarity may be one important evidence that mouse and human may have the same ancestor.
+the score of human-Randome is : 12
+ the persentage is : 5.405405405405405%
+the score of mouse-Randome is : 13
+ the persentage is : 5.8558558558558556%
+the score of mouse-human is : 199
+ the persentage is : 89.63963963963964%
+
+Form the comparisons, we can found that the similarity of protein sequence between human and mouse is much similar than each of both compared with random sequence. The similarity is not a coincidence. From animals classification, human and mouse are both mammals. Whats more, from theory of evolution, the protein similarity may be one important evidence that mouse and human may have the same ancestor.
