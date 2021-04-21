@@ -1,6 +1,6 @@
-translate = {'C':'G', 'G':'C', 'A':'T', 'T':'A'}
 #Here is the function:
 def calculator(DNA):
+ translate = {'C':'G', 'G':'C', 'A':'T', 'T':'A'}
  new_DNA = ''
  for n in range(0,len(DNA)):
   new_DNA = translate[DNA[n]] + new_DNA
