@@ -5,6 +5,8 @@ result=' '
 a = False
 gene = ' '
 for line in file:
+# find the DNA we want
+# a is used to signal whether the fuction of gene is unknown
  if line.startswith('>'):
   if a == True:
    result = result+ (gene_name+'     '+ str(len(gene))+ '\n' + gene + '\n')
@@ -19,7 +21,8 @@ for line in file:
   if a == True:
    gene = gene +line.strip()+'\n'
 file.close()
-result_output = open('unknown_function(1).fa','w')
+# write the result in a new file named "unknow_function.fa"
+result_output = open('unknown_function.fa','w')
 result_output.write(result)
 result_output.close()
 
