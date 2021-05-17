@@ -1,5 +1,5 @@
 import re
-protein = ' '
+protein = ''
 file = input('')
 code = {'ATA': 'I', 'ATC': 'I', 'ATT': 'I', 'ATG': 'M',
         'ACA': 'T', 'ACC': 'T', 'ACG': 'T', 'ACT': 'T',
@@ -18,30 +18,29 @@ code = {'ATA': 'I', 'ATC': 'I', 'ATT': 'I', 'ATG': 'M',
         'TAC': 'Y', 'TAT': 'Y', 'TAA': '', 'TAG': '',
         'TGC': 'C', 'TGT': 'C', 'TGA': '', 'TGG': 'W'}
 file_gene = open('Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa')
-gene_name=' '
-result=' '
+gene_name=''
+result=''
 a = False
-gene=' '
-for line in field_gene:
+gene=''
+for line in file_gene:
  if line.startswith('>'):
-  if a == true:
+  if a == True:
    for n in range(0,len(gene),3):
     if gene[n:n+3] in code:
-    protein = protein + code[result[n:n+3]]
+     protein = protein + code[gene[n:n+3]]
    result = result+gene_name+'     '+ str(len(gene))+ '\n' + protein
-   gene = ' '
-   gene_name=' '
+   gene = ''
+   gene_name=''
    a = False
   if re.findall(r'unknown', line):
-   gene_name = re.findall(r'^>.+?_', line)
+   gene_name = re.findall(r'(^>.+?)_', line)
    gene_name = gene_name[0]
-   gene_name = gene_name[:-1]
    a = True
  else:
   if a == True:
    gene = gene + line.strip()
 file_gene.close()
-result_output = open(file)
+result_output = open(file, 'w')
 result_output.write(result)
 result_output.close()
 
