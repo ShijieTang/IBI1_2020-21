@@ -23,5 +23,5 @@ b = a.loc[a["date"] == "2020-03-31", "location"]
 #get the country which is eligible on 2020-03-30
 c = a.loc[a["date"] == "2020-03-30", "location"]
 #get the result
-result = pd.merge(b+c)
+result = pd.merge(b,c)
 print(result)
