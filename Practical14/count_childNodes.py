@@ -27,7 +27,7 @@ def counter(x):
  son_name = []
  global son_namelist
  son_namelist = []
- print(x + " parents are been finding ...")
+ print(x + " parents are being sought ...")
  for term in terms:
      defstr = term.getElementsByTagName('defstr')[0]
      is_a = term.getElementsByTagName('is_a')
@@ -37,7 +37,7 @@ def counter(x):
  print("Parents have been found")
  print("The number is : " + str(len(fathers_id)))
  print("")
- print(x+ " sons are been founding ...")
+ print(x+ " sons are being sought ...")
  for term in terms:
      if term.getElementsByTagNameNS('*','is_a') == []:
          continue
@@ -72,7 +72,7 @@ def counter(x):
      son_namelist2 = son_namelist
      print("The number now is : "+ str(len(son_namelist)))
      print("")
- print("Congratulation! Search is finished.")
+ print("Congratulations! Search is finished.")
  print("The "+x+" number is %s" % len(son_namelist))
  return son_namelist
 
